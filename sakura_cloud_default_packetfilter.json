@@ -1,0 +1,32 @@
+{
+  "PacketFilter": {
+    "Expression": [{
+      "Protocol": "udp",
+      "SourceNetwork": "210.188.224.14",
+      "SourcePort": 123,
+      "Action": "allow"
+    }, {
+      "Protocol": "tcp",
+      "SourceNetwork": "0.0.0.0/0",
+      "DestinationPort": "32768-61000",
+      "Action": "allow"
+    }, {
+      "Protocol": "udp",
+      "SourceNetwork": "0.0.0.0/0",
+      "DestinationPort": "32768-61000",
+      "Action": "allow"
+    }, {
+      "Protocol": "icmp",
+      "SourceNetwork": "0.0.0.0/0",
+      "Action": "allow"
+    }, {
+      "Protocol": "fragment",
+      "SourceNetwork": "0.0.0.0/0",
+      "Action": "allow"
+    }, {
+      "Protocol": "ip",
+      "SourceNetwork": "0.0.0.0/0",
+      "Action": "deny"
+    }]
+  }
+}
